@@ -5,14 +5,15 @@ const Constraint = Matter.Constraint;
 
 var engine, world;
 var box1, pig1,pig3;
-var backgroundImg,platform, bg;
-var bird, slingshot;
+var backgroundImg,platform;
+var bg= "sprites/bg.png";
+var bird, slingshot;"sprites/bg.png"
 var score = 0;
 
 var gameState = "onSling";
 
 function preload() {
-    //backgroundImg = loadImage("sprites/bg.png");
+    backgroundImg = loadImage("sprites/bg.png");
     getBackgroundImage();
 }
 
@@ -94,7 +95,7 @@ function mouseReleased(){
 
 function keyPressed(){
     if(keyCode === 32){
-       // slingshot.attach(bird.body);
+       //slingshot.attach(bird.body);
     }
 }
 
